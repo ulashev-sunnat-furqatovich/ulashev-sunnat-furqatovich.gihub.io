@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "HelveticaNeueCyr.zip", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_page_board {
+  width: 979px;
+  height: 701px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login_page_board .kirish {
+  color: #fff;
+  width: 452px;
+  height: 100%;
+  background: url("bg-img.png"), #d3d3d3dd 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login_page_board .kirish .kirish_darker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.login_page_board .kirish .text {
+  padding: 0 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.login_page_board .kirish .text .title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.login_page_board .kirish .text .desc {
+  color: #e1bb97;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.login_page_board .kirish .btn {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  width: 328px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  text-decoration: none;
+  border-radius: 26.5px;
+  border: 1px solid #e1bb97;
+}
+
+.login_page_board .right {
+  width: 527px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+  background: #181818;
+}
+
+.login_page_board .right .title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.login_page_board .right .icon_links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.social-link svg:hover circle,
+svg {
+  color: #d18c4b;
+  transform: scale(1.01);
+}
+
+.login_page_board .right .login_board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login_page_board .right .login_board .title {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.login_page_board .right .login_board .inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login_page_board .right .login_board .inputs .label {
+  width: 328px;
+  height: 53px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  border-radius: 26.5px;
+  border: 1px solid #e1bb97;
+  cursor: text;
+}
+.login_page_board .right .login_board .inputs input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.login_page_board .right .login_board .inputs .label img {
+  margin-left: 19px;
+}
+
+.login_page_board
+  .right
+  .login_board
+  .inputs
+  .label
+  .form-control::placeholder {
+  color: #e1bb97;
+}
+
+.login_page_board .right .login_board .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login_page_board .right .login_board .btns .btn {
+  width: 328px;
+  height: 53px;
+  border-radius: 26.5px;
+  border: 2px solid #e1bb97;
+  background: #e1bb97;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_page_board .right .login_board .btns .btn:hover {
+  color: #e1bb97;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.login_page_board .right .login_board .btns a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
